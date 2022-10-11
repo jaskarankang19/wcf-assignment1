@@ -1,0 +1,6 @@
+C:\CPA 8\DISTRIBUTED APPLICATIONS\wcf-assignment1\wcf-assignment1\wcf-assignment1\bin\wcf-assignment1.dll.config
+C:\CPA 8\DISTRIBUTED APPLICATIONS\wcf-assignment1\wcf-assignment1\wcf-assignment1\bin\wcf-assignment1.dll
+C:\CPA 8\DISTRIBUTED APPLICATIONS\wcf-assignment1\wcf-assignment1\wcf-assignment1\bin\wcf-assignment1.pdb
+C:\CPA 8\DISTRIBUTED APPLICATIONS\wcf-assignment1\wcf-assignment1\wcf-assignment1\obj\Debug\wcf-assignment1.csproj.CoreCompileInputs.cache
+C:\CPA 8\DISTRIBUTED APPLICATIONS\wcf-assignment1\wcf-assignment1\wcf-assignment1\obj\Debug\wcf-assignment1.dll
+C:\CPA 8\DISTRIBUTED APPLICATIONS\wcf-assignment1\wcf-assignment1\wcf-assignment1\obj\Debug\wcf-assignment1.pdb

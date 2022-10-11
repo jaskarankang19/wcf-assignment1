@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Operations" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:50368/Operations.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:50368/Operations.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:50368/Operations.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IOperations_CheckPrime_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckPrime" />
+  </wsdl:message>
+  <wsdl:message name="IOperations_CheckPrime_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckPrimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOperations_DoSum_InputMessage">
+    <wsdl:part name="parameters" element="tns:DoSum" />
+  </wsdl:message>
+  <wsdl:message name="IOperations_DoSum_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DoSumResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOperations_ReverseString_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReverseString" />
+  </wsdl:message>
+  <wsdl:message name="IOperations_ReverseString_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReverseStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOperations_CreateHtml_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateHtml" />
+  </wsdl:message>
+  <wsdl:message name="IOperations_CreateHtml_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateHtmlResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOperations_SortNumbers_InputMessage">
+    <wsdl:part name="parameters" element="tns:SortNumbers" />
+  </wsdl:message>
+  <wsdl:message name="IOperations_SortNumbers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SortNumbersResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IOperations">
+    <wsdl:operation name="CheckPrime">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOperations/CheckPrime" message="tns:IOperations_CheckPrime_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOperations/CheckPrimeResponse" message="tns:IOperations_CheckPrime_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DoSum">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOperations/DoSum" message="tns:IOperations_DoSum_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOperations/DoSumResponse" message="tns:IOperations_DoSum_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReverseString">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOperations/ReverseString" message="tns:IOperations_ReverseString_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOperations/ReverseStringResponse" message="tns:IOperations_ReverseString_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateHtml">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOperations/CreateHtml" message="tns:IOperations_CreateHtml_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOperations/CreateHtmlResponse" message="tns:IOperations_CreateHtml_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SortNumbers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOperations/SortNumbers" message="tns:IOperations_SortNumbers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOperations/SortNumbersResponse" message="tns:IOperations_SortNumbers_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IOperations" type="tns:IOperations">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CheckPrime">
+      <soap:operation soapAction="http://tempuri.org/IOperations/CheckPrime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DoSum">
+      <soap:operation soapAction="http://tempuri.org/IOperations/DoSum" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReverseString">
+      <soap:operation soapAction="http://tempuri.org/IOperations/ReverseString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateHtml">
+      <soap:operation soapAction="http://tempuri.org/IOperations/CreateHtml" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SortNumbers">
+      <soap:operation soapAction="http://tempuri.org/IOperations/SortNumbers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Operations">
+    <wsdl:port name="BasicHttpBinding_IOperations" binding="tns:BasicHttpBinding_IOperations">
+      <soap:address location="http://localhost:50368/Operations.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

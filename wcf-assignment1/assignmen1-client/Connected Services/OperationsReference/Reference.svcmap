@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c235d881-7cbe-42cc-b03b-34896209eefd" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:50368/Operations.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Operations.xsd" MetadataType="Schema" ID="4134ddfa-35d3-476f-9393-86052f743cb7" SourceId="1" SourceUrl="http://localhost:50368/Operations.svc?xsd=xsd2" />
+    <MetadataFile FileName="Operations1.xsd" MetadataType="Schema" ID="0a31c36b-4dc4-4edf-bd84-015470cd7da8" SourceId="1" SourceUrl="http://localhost:50368/Operations.svc?xsd=xsd1" />
+    <MetadataFile FileName="Operations.wsdl" MetadataType="Wsdl" ID="dcf6a6fd-3ca2-4b84-8e7a-c1f9f6b4cf19" SourceId="1" SourceUrl="http://localhost:50368/Operations.svc?wsdl" />
+    <MetadataFile FileName="Operations.disco" MetadataType="Disco" ID="9a4dcdb0-bfab-4857-988a-e76c3db61692" SourceId="1" SourceUrl="http://localhost:50368/Operations.svc?disco" />
+    <MetadataFile FileName="Operations2.xsd" MetadataType="Schema" ID="9bc1e9b2-6f8d-49b2-96b0-60f2743fac2d" SourceId="1" SourceUrl="http://localhost:50368/Operations.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,7 @@
+C:\CPA 8\DISTRIBUTED APPLICATIONS\wcf-assignment1\wcf-assignment1\assignmen1-client\bin\Debug\assignmen1-client.exe.config
+C:\CPA 8\DISTRIBUTED APPLICATIONS\wcf-assignment1\wcf-assignment1\assignmen1-client\bin\Debug\assignmen1-client.exe
+C:\CPA 8\DISTRIBUTED APPLICATIONS\wcf-assignment1\wcf-assignment1\assignmen1-client\bin\Debug\assignmen1-client.pdb
+C:\CPA 8\DISTRIBUTED APPLICATIONS\wcf-assignment1\wcf-assignment1\assignmen1-client\obj\Debug\assignmen1-client.csproj.CoreCompileInputs.cache
+C:\CPA 8\DISTRIBUTED APPLICATIONS\wcf-assignment1\wcf-assignment1\assignmen1-client\obj\Debug\assignmen1-client.exe
+C:\CPA 8\DISTRIBUTED APPLICATIONS\wcf-assignment1\wcf-assignment1\assignmen1-client\obj\Debug\assignmen1-client.pdb
+C:\CPA 8\DISTRIBUTED APPLICATIONS\wcf-assignment1\wcf-assignment1\assignmen1-client\obj\Debug\assignmen1-client.csprojAssemblyReference.cache
