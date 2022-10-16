@@ -8,10 +8,13 @@ using System.Text;
 
 namespace wcf_assignment1
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in code, svc and config file together.
-    // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class Operations : IOperations
     {
+        /// <summary>
+        /// Check if number is prime
+        /// </summary>
+        /// <param name="number">Integer to check for</param>
+        /// <returns>true if number i prime, false otherwise</returns>
         public bool CheckPrime(int number)
         {
             int count = 0;
@@ -31,6 +34,11 @@ namespace wcf_assignment1
                 return false;
             }
         }
+        /// <summary>
+        /// Do sum of digits
+        /// </summary>
+        /// <param name="number">Number to find sum</param>
+        /// <returns>Sum of digits</returns>
         public int DoSum(int number)
         {
             int sum = 0;
@@ -45,6 +53,11 @@ namespace wcf_assignment1
             }
             return sum;
         }
+        /// <summary>
+        /// Reverse a string
+        /// </summary>
+        /// <param name="value">String to reverse</param>
+        /// <returns>Reversed string</returns>
         public string ReverseString(string value)
         {
             StringBuilder sb = new StringBuilder();
@@ -56,6 +69,12 @@ namespace wcf_assignment1
 
             return sb.ToString();
         }
+        /// <summary>
+        /// Wrap text provided with provided HTML tag
+        /// </summary>
+        /// <param name="tag">HTML tag</param>
+        /// <param name="value">Text to wrap</param>
+        /// <returns></returns>
         public string CreateHtml(string tag, string value)
         {
             string startTag="<"+tag+">";
@@ -64,6 +83,12 @@ namespace wcf_assignment1
             return $"{startTag}{value}{endTag}";
         }
 
+        /// <summary>
+        /// Sort numbers
+        /// </summary>
+        /// <param name="type">Ascending or Descending</param>
+        /// <param name="arrNumbers">Array of Numbers</param>
+        /// <returns>Sorted array based on type provided</returns>
         public int[] SortNumbers(string type, int[] arrNumbers)
         {
            
